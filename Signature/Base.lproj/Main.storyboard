@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Signature" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JdD-N3-EUk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2dB-3A-wk6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsg-6y-ybs">
+                                <rect key="frame" x="16" y="28" width="49" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="1QF-zi-s8M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z6D-qC-Hwh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bl9-n0-lY0">
+                                <rect key="frame" x="320" y="28" width="39" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="mCn-WC-osd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r3A-rB-8i8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QD-Ul-s7f">
+                                <rect key="frame" x="318" y="66" width="57" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="Q40-EK-sh5"/>
+                                    <constraint firstAttribute="height" constant="30" id="Zob-Lv-V4h"/>
+                                </constraints>
+                                <state key="normal" image="Black.png"/>
+                                <connections>
+                                    <action selector="pencilPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c6Q-ni-nrJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWe-Qd-GSD">
+                                <rect key="frame" x="320" y="104" width="55" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="dqB-3k-xis"/>
+                                    <constraint firstAttribute="height" constant="30" id="ipd-G7-Coy"/>
+                                </constraints>
+                                <state key="normal" image="Eraser.png"/>
+                                <connections>
+                                    <action selector="eraserPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bS2-29-sYN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JdD-N3-EUk" secondAttribute="bottom" id="4wf-Hs-ZlY"/>
+                            <constraint firstItem="MWe-Qd-GSD" firstAttribute="top" secondItem="3QD-Ul-s7f" secondAttribute="bottom" constant="8" id="A3N-hd-jWr"/>
+                            <constraint firstItem="Bl9-n0-lY0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ACx-zN-XrS"/>
+                            <constraint firstAttribute="trailing" secondItem="2dB-3A-wk6" secondAttribute="trailing" id="IYU-V3-on9"/>
+                            <constraint firstItem="JdD-N3-EUk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JYS-eQ-PiI"/>
+                            <constraint firstItem="Bl9-n0-lY0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="JYX-6z-Q3c"/>
+                            <constraint firstItem="2dB-3A-wk6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MxG-9j-VvS"/>
+                            <constraint firstItem="2dB-3A-wk6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SiY-Qd-GDy"/>
+                            <constraint firstItem="JdD-N3-EUk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XS0-dw-ccS"/>
+                            <constraint firstAttribute="trailing" secondItem="MWe-Qd-GSD" secondAttribute="trailing" id="dHv-kt-lEq"/>
+                            <constraint firstAttribute="trailing" secondItem="JdD-N3-EUk" secondAttribute="trailing" id="gzb-Za-4xe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2dB-3A-wk6" secondAttribute="bottom" id="wXd-68-8nB"/>
+                            <constraint firstItem="Dsg-6y-ybs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xby-rA-ksm"/>
+                            <constraint firstAttribute="trailing" secondItem="3QD-Ul-s7f" secondAttribute="trailing" id="xhA-Yd-6Fh"/>
+                            <constraint firstItem="Dsg-6y-ybs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="yj6-f9-ByD"/>
+                            <constraint firstItem="3QD-Ul-s7f" firstAttribute="top" secondItem="Bl9-n0-lY0" secondAttribute="bottom" constant="8" id="zaQ-Ta-4OC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainImageView" destination="JdD-N3-EUk" id="KU4-de-dB5"/>
+                        <outlet property="tempImageView" destination="2dB-3A-wk6" id="APA-De-xxa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="680.79999999999995" y="-292.80359820089956"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Black.png" width="332" height="53"/>
+        <image name="Eraser.png" width="167" height="55"/>
+    </resources>
+</document>
